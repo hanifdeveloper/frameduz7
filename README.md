@@ -1,5 +1,5 @@
-# frameduz6
-Framework Weduz versi 6
+# frameduz7
+Framework Weduz versi 7
 
 # Install Vritual Host MAC OS
 sh -c "$(curl -s https://raw.githubusercontent.com/hanifdeveloper/webserver/master/mac_os/virtualhost.sh)"

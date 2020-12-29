@@ -15,11 +15,11 @@ return array(
      */
     'crud' => array(
         'driver' => 'mysql',
-        'host' => 'localhost',
-        'port' => 3306,
-        'user' => 'root',
-        'password' => 'root',
-        'dbname' => 'dbweb_sample',
+        'host' => getenv('MYSQL_HOST'),
+        'port' => getenv('MYSQL_PORT'),
+        'user' => getenv('MYSQL_USER'),
+        'password' => getenv('MYSQL_PASS'),
+        'dbname' => getenv('MYSQL_DBNAME'),
         'charset' => 'utf8',
         'collate' => 'utf8_general_ci',
         'persistent' => false,

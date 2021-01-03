@@ -1,10 +1,10 @@
 <?php
 /**
- * frameduzPHP v6
+ * frameduzPHP v7
  *
  * @Author  	: M. Hanif Afiatna <hanif.softdev@gmail.com>
- * @Since   	: version 6.0.0
- * @Date		: 21 Mei 2019
+ * @Since   	: version 7.0.0
+ * @Date		: 04 Agustus 2020
  * @package 	: core system
  * @Description : 
  */
@@ -33,26 +33,6 @@ class Url{
 		$this->Controller = $defaultController;
 		$this->Method = $defaultMethod;
 		$this->ID = '';
-
-		// if(!empty($_GET['p1'])){
-		// 	$this->ProjectName = $_GET['p1'];
-		// 	if(array_key_exists($this->ProjectName, $this->mainConfig['project'])){ // Jika sebuah project
-		// 		$this->PathController = $this->mainConfig['project'][$this->ProjectName]['path'];
-		// 		$this->Controller = $this->mainConfig['project'][$this->ProjectName]['controller'];
-		// 		$this->Method = $this->mainConfig['project'][$this->ProjectName]['method'];
-		// 		$this->ID = null;
-		// 		if(!empty($_GET['p2'])) $this->Controller = $_GET['p2'];
-		// 		if(!empty($_GET['p3'])) $this->Method = $_GET['p3'];
-		// 		if(!empty($_GET['p4'])) $this->ID = $_GET['p4'];
-		// 	}
-		// 	else{
-		// 		$this->ProjectName =  $this->defaultProject;
-		// 		$this->PathController = $defaultPathController;
-		// 		$this->Controller = $_GET['p1'];
-		// 		if(!empty($_GET['p2'])) $this->Method = $_GET['p2'];
-		// 		if(!empty($_GET['p3'])) $this->ID = $_GET['p3'];
-		// 	}
-		// }
 
 		if(isset($_GET['url'])) {
 			$url = rtrim($_GET['url'], '/');
@@ -84,17 +64,7 @@ class Url{
 				}
 			}
 		}
-
-		// $a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
-		// print_r(array_values($a));
-		// print_r($a);die;
-
-		// echo "ProjectName: $this->ProjectName<br>";
-		// echo "PathController: $this->PathController<br>";
-		// echo "Controller: $this->Controller<br>";
-		// echo "Method: $this->Method<br>";
-		// var_dump($this->ID);
-		// die;
+		
 	}
 
 	public function isHttps(){

@@ -16,6 +16,7 @@ class main extends application{
 	}
 
 	public function index(){
+		// $this->debugResponse($_SERVER);
 		$this->showView('index', $this->data, 'defaults');
 	}
 

@@ -1,10 +1,10 @@
 <?php
 /**
- * frameduzPHP v6
+ * frameduzPHP v7
  *
  * @Author  	: M. Hanif Afiatna <hanif.softdev@gmail.com>
- * @Since   	: version 6.0.0
- * @Date		: 21 Mei 2019
+ * @Since   	: version 7.0.0
+ * @Date		: 04 Agustus 2020
  * @package 	: core system
  * @Description : 
  */
